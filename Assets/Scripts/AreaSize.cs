@@ -12,8 +12,8 @@ public class AreaSize : MonoBehaviour
         areaSize = int.Parse(GameObject.Find("AreaSize").GetComponent<TMP_InputField>().text);
         if (areaSize != 0)
         {
-            GameObject.Find("GenerateAreaHolder").GetComponent<Canvas>().planeDistance = 0;
-            GameObject.Find("ColouringAreaHolder").GetComponent<Canvas>().planeDistance = 100;
+            GameObject.Find("GenerateAreaHolder").GetComponent<Canvas>().renderMode = RenderMode.ScreenSpaceCamera;
+            GameObject.Find("ColouringAreaHolder").GetComponent<Canvas>().renderMode = RenderMode.ScreenSpaceOverlay;
             for (int i = 0; i < areaSize; i++)
             {
                 for (int j = 0; j < areaSize; j++)
