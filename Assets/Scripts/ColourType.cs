@@ -15,17 +15,16 @@ public class ColourType : MonoBehaviour
 
     public static Color GetColor()
     {
-        if (temp == 1)
+        switch (temp)
         {
-            return Color.magenta;
-        }else if (temp == 2)
-        {
-            return Color.black;
+            case 1:
+                return Color.magenta;
+            case 2:
+                return Color.black;
+            case 3:
+                return Color.cyan;
+            default:
+                return Color.grey;
         }
-        else if (temp == 3)
-        {
-            return Color.cyan;
-        }
-        return Color.grey;
     }
 }
