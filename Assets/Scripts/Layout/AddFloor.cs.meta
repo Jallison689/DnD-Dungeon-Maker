@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 4a8ae8a79bf18a5458fbd383d2717f8c
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - wall: {fileID: 4430651447309460128, guid: 0f8e1af6fc321f242b97c61b3c1c50da, type: 3}
+  - floor: {fileID: 1703910812008532952, guid: 224295b80031c5a4298f607f384c771d, type: 3}
+  - door: {fileID: 1126050466982372691, guid: 8125e7f0a8460ac48ab8e2962ae24bdc, type: 3}
+  - hazard: {fileID: 5270517783198842013, guid: 3f8dce339c7db944e8bb19ba1bef83f9,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
