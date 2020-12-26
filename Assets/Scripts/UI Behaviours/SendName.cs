@@ -1,17 +1,24 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
 
 public class SendName : MonoBehaviour
 {
 
-    private string temp;
+    private static string temp = "";
 
     public void GetAndSendName()
     {
         temp = (GameObject.Find("NameEntry").GetComponent<TMP_InputField>().text);
-        NameBusiness.TakeName(temp);
+    }
+
+    public static string GiveName()
+    {
+        return temp;
+    }
+
+    public static void Delete()
+    {
+        temp = "";
         Destroy(GameObject.Find("NameEntryHolder(Clone)"));
     }
 }

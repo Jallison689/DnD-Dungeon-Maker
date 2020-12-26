@@ -30,7 +30,7 @@ public class AddFloor : MonoBehaviour
         {
             if (GetComponent<Renderer>().material.color == Color.black)
             {
-                Instantiate(wall, new Vector3(GetComponent<Transform>().position.x, GetComponent<Transform>().position.y + 0.5f,GetComponent<Transform>().position.z), new Quaternion());
+                Instantiate(wall, new Vector3(GetComponent<Transform>().position.x, GetComponent<Transform>().position.y + 0.5f, GetComponent<Transform>().position.z), new Quaternion());
             }
             else if (GetComponent<Renderer>().material.color == Color.grey)
             {
@@ -49,7 +49,6 @@ public class AddFloor : MonoBehaviour
             {
                 Instantiate(floor, new Vector3(GetComponent<Transform>().position.x, GetComponent<Transform>().position.y, GetComponent<Transform>().position.z), new Quaternion());
                 temp2 = Instantiate(entity, new Vector3(GetComponent<Transform>().position.x, GetComponent<Transform>().position.y + 1, GetComponent<Transform>().position.z), new Quaternion());
-                
             }
             else if (GetComponent<Renderer>().material.color == Color.red)
             {
